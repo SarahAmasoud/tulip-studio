@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #fffafc;
+  color: #4d4d4d;
+  font-family: 'Tajawal', sans-serif;
+  scroll-behavior: smooth;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+header {
+  background: rgba(255, 255, 255, 0.9);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  backdrop-filter: blur(6px);
+  border-bottom: 1px solid #f3dbe9;
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+.logo {
+  font-size: 26px;
+  color: #c94d91;
+  font-family: 'Amiri', serif;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #555;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: #c94d91;
+}
+
+.cta {
+  background: linear-gradient(to right, #c94d91, #f4c2c2);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s;
+  box-shadow: 0 0 8px #c94d91;
+}
+
+.cta:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 14px #c94d91;
+}
+
+.hero {
+  background: url('https://images.pexels.com/photos/12471144/pexels-photo-12471144.jpeg') no-repeat center center/cover;
+  padding: 100px 0;
+  text-align: right;
+  color: #f5eff2;
+}
+
+.hero-text h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.hero-text p {
+  font-size: 20px;
+  max-width: 600px;
+}
+
+.about {
+  background: #fff4f8;
+  padding: 60px 0;
+  text-align: right;
+}
+
+.about h3 {
+  font-size: 26px;
+  color: #a83d78;
+  margin-bottom: 15px;
+}
+
+.about p {
+  font-size: 18px;
+  line-height: 1.9;
+  margin-bottom: 20px;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tags span {
+  background: #f8ddec;
+  color: #a83d78;
+  padding: 6px 12px;
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+.projects {
+  padding: 60px 0;
+  text-align: center;
+}
+
+.projects h3 {
+  font-size: 26px;
+  margin-bottom: 20px;
+  color: #a83d78;
+}
+
+.cards {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 200px;
+  height: 200px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+footer {
+  background: #fff;
+  text-align: center;
+  padding: 40px 0;
+  color: #888;
+  font-size: 14px;
+  border-top: 1px solid #f1e5ee;
+}
